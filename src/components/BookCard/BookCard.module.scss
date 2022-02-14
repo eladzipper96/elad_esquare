@@ -1,0 +1,58 @@
+.container {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  margin: 2rem 2rem;
+}
+
+.book_info {
+  grid-column: 2/3;
+  padding: 0rem 3rem;
+  text-align: left;
+}
+
+.book_name {
+  text-align: left;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.book_description {
+  font-size: 1.5rem;
+}
+
+.book_image {
+  min-width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    margin: unset;
+    padding: 2rem 0rem;
+    &:not(:last-child) {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: rgb(0, 0, 0);
+    }
+  }
+
+  .book_info {
+    grid-column: unset;
+    grid-row: 2/3;
+    padding: 0rem 3rem;
+    text-align: left;
+  }
+
+  .book_image {
+    grid-row: 1/2;
+    min-width: 150px;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .book_name {
+    text-align: center;
+    font-weight: bolder;
+  }
+}

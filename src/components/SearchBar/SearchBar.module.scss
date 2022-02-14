@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.input {
+  border-style: solid;
+  border-width: 1px;
+
+  & input {
+    width: 20vw;
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+    outline: none;
+    border: none;
+  }
+}
+
+.submit {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem 2rem;
+  background-color: rgb(5, 197, 197);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+  input {
+    width: 30vw !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  input {
+    width: 35vw !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  input {
+    width: 40vw !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  input {
+    width: 55vw !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input {
+    width: 40vw !important;
+  }
+}
