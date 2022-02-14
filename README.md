@@ -1,3 +1,3 @@
 # Elad Zipper Book Search App
 
-You can contect me via eladziper96@gmail.com
+You can contect me via eladzipper96@gmail.com
